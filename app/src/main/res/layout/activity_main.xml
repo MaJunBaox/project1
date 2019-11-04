@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.majunbao.demo.ui.activity.MainActivity">
+
+    <com.majunbao.widget.layout.NoScrollViewPager
+        android:id="@+id/vp_home_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+    <View style="@style/HorizontalLineStyle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llTab"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="游游鸭"
+            android:gravity="center"
+            android:id="@+id/tvHome"
+            android:drawableTop="@drawable/ic_selector_selectable_home"
+            android:drawablePadding="2dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:textSize="9sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="商城"
+            android:gravity="center"
+            android:id="@+id/tvShop"
+            android:drawableTop="@drawable/ic_selector_selectable_shop"
+            android:drawablePadding="2dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:textSize="9sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="我的"
+            android:gravity="center"
+            android:id="@+id/tvMine"
+            android:drawableTop="@drawable/ic_selector_selectable_mine"
+            android:drawablePadding="2dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:textSize="9sp"
+            />
+    </LinearLayout>
+</LinearLayout>

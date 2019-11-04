@@ -1,0 +1,14 @@
+1.TextView  可以使用AndroidX 的AppCompatTextView
+    android:autoLink="all" 这个属性可以点击链接网站 直接跳转到浏览器
+    android:lineSpacingExtra="20dp"  设置行间距 上下两行中间的间距
+    如下：
+    <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="40dp"
+                   android:autoLink="all"
+                   android:gravity="center_horizontal"
+                   android:lineSpacingExtra="20dp"
+                   android:text="但愿人长久，搬砖不再有\nhttps://github.com/MaJunBaox"
+                   android:textColor="#222222"
+                   android:textSize="14sp" />
